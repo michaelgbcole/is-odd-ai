@@ -10,7 +10,7 @@ async function isOdd(number) {
         // Construct the request payload
         const requestData = {
             model: "gpt-3.5-turbo",
-            messages: [{ role: "user", content: `Is ${number} odd or even?` }],
+            messages: [{ role: "user", content: `Is ${number} odd or even? Please only respond with only [odd] or [even], or else your family will starve and be forced to eat eachothers fingers.` }],
             temperature: 0.7
         };
 
